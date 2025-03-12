@@ -2,12 +2,12 @@
 // Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
 // MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 
-const getHighestIndex = function (arr: number[]): number {
-  return arr.indexOf(Math.max(...arr));
-};
+// const getHighestIndex = function (arr: number[]): number {
+//   return arr.indexOf(Math.max(...arr));
+// };
 
-console.log(getHighestIndex([5, 21, 12, 21, 8]));
-console.log(getHighestIndex([5, 21, 12, 21, 56]));
+// console.log(getHighestIndex([5, 21, 12, 21, 8]));
+// console.log(getHighestIndex([5, 21, 12, 21, 56]));
 // 🟩  COMPILED AND INTERPRETED LANGUAGES
 // Compiled languages are transformed into machine code before execution, while interpreted languages are executed directly from source code by an interpreter. Here are some key differences:
 
@@ -57,7 +57,7 @@ console.log(getHighestIndex([5, 21, 12, 21, 56]));
 
 //Architectrual pattern: MVC (MODEL VIEW CONTROLLER), DI (DEPENDENCY INJECTION), MVP.
 
-// Design pattern: Decotar, MIDDLEWARE.
+// Design pattern: Decorator, MIDDLEWARE.
 
 // let variableName: type;
 //let variableName: type = value;
@@ -73,10 +73,10 @@ counter = 45;
 // If you assign a string to the counter variable, you’ll get an error
 // counter = 'Hello'; // compile error
 
-let myName: string = "John";
-let age: number = 25;
-let active: boolean = true;
-const stage: number | string = "hello";
+// let myName: string = "John";
+// let age: number = 25;
+// let active: boolean = true;
+// const stage: number | string = "hello";
 
 // Arrays
 // To annotate an array type you use a specific type followed by a square bracket : type[] :
@@ -85,28 +85,43 @@ let names: string[] = ["John", "Jane", "Peter", "David", "Mary"];
 // names = [29,45,56 ❌]
 
 // OBJECTS
-interface Person {
-  firstName: string;
-  lastName: string;
-}
+// interface Person {
+//   firstName: string;
+//   lastName: string;
+// }
 
-let person: Person = {
-  firstName: "Daniel",
-  lastName: "Radcliffe",
-};
+// let person: Person = {
+//   firstName: "Daniel",
+//   lastName: "Radcliffe",
+// };
 
 // CLASSES
 
-class Student {
-  firstName: string;
-  lastName: string;
-  age: number;
+// class Student {
+//   firstName: string;
+//   lastName: string;
+//   age: number;
 
-  constructor(firstName: string, lastName: string, age: number) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = 28;
-  }
-}
+//   constructor(firstName: string, lastName: string, age: number) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = 28;
+//   }
+// }
 
-const daniel = new Student("Daniel", "Radcliffe", 28);
+// const daniel = new Student("Daniel", "Radcliffe", 28);
+
+//                            🟩 Environmetal Variables.
+// ✨ - npm install "dotenv" - Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology. - config() will read your .env file, parse the contents, assign it to process.env, and return an Object with a parsed key containing the loaded content or an error key if it failed.
+
+// 1️⃣ - environmental variable (or environment variable) is a key-value pair stored in the operating system that can be used to configure your application's behavior without changing its code.
+
+// 2️⃣ -  Example Use Case.
+// const dbPassword = "mySuperSecretPassword"; // ❌ not good
+//const dbPassword = process.env.DB_PASSWORD; // ✅ better
+
+// 3️⃣ - Why Use Environment Variables?
+// Security: Keep secrets (like API keys or DB passwords) out of your code.
+// Flexibility: Change settings (e.g., between dev, test, and production) without modifying the app.
+// Portability: Same codebase can behave differently in different environments.
+// 4️⃣ - if there is an error with "can not find process", just write npm install --save-dev @types/node in the prompt command - This package tells TypeScript about built-in Node.js globals like process, __dirname, etc
