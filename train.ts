@@ -125,3 +125,7 @@ let names: string[] = ["John", "Jane", "Peter", "David", "Mary"];
 // Flexibility: Change settings (e.g., between dev, test, and production) without modifying the app.
 // Portability: Same codebase can behave differently in different environments.
 // 4️⃣ - if there is an error with "can not find process", just write npm install --save-dev @types/node in the prompt command - This package tells TypeScript about built-in Node.js globals like process, __dirname, etc
+
+// ✨ - Clustor => Database => collection => document => dataset.
+//✨ - git reset --hard is a powerful Git command that resets your working directory, staging area, and current branch to a specified commit — and it discards all changes.
+// It's like saying: “Forget all my changes, go back to this exact commit — and make it as if my recent work never happened.”
