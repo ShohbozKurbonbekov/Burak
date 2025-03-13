@@ -132,3 +132,6 @@ let names: string[] = ["John", "Jane", "Peter", "David", "Mary"];
 
 // 🟩 - Mongoose
 // Mongoose is an Object Data Modeling (ODM) library designed for Node.js and MongoDB. It provides a straightforward, schema-based solution to model your application data, offering a layer of abstraction over the native MongoDB driver.
+// 1️⃣ @types/express@4.17.3:
+//                  What is @types/express?
+// It provides TypeScript type definitions for Express. It's part of the DefinitelyTyped project, which maintains type declarations for many JavaScript libraries that don’t come with built-in TypeScript support. When you install @types/express, you're telling TypeScript what the types of all the Express functions, classes, and objects are — so TypeScript can give you auto-complete, type checking, and better error detection.
