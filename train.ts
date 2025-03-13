@@ -98,14 +98,14 @@ let names: string[] = ["John", "Jane", "Peter", "David", "Mary"];
 // CLASSES
 
 // class Student {
-//   firstName: string;
-//   lastName: string;
-//   age: number;
+//   firstName;
+//   lastName;
+//   age;
 
 //   constructor(firstName: string, lastName: string, age: number) {
 //     this.firstName = firstName;
 //     this.lastName = lastName;
-//     this.age = 28;
+//     this.age = age
 //   }
 // }
 
@@ -129,3 +129,6 @@ let names: string[] = ["John", "Jane", "Peter", "David", "Mary"];
 // ✨ - Clustor => Database => collection => document => dataset.
 //✨ - git reset --hard is a powerful Git command that resets your working directory, staging area, and current branch to a specified commit — and it discards all changes.
 // It's like saying: “Forget all my changes, go back to this exact commit — and make it as if my recent work never happened.”
+
+// 🟩 - Mongoose
+// Mongoose is an Object Data Modeling (ODM) library designed for Node.js and MongoDB. It provides a straightforward, schema-based solution to model your application data, offering a layer of abstraction over the native MongoDB driver.
