@@ -1,3 +1,18 @@
+/*                    TASK-H:
+Integerlardan iborat arrayni argument sifatida qabul qiladigan
+function tuzing. Ushbu function faqatgina positive sonlarni olib
+string holatida return qilsin.
+MASALAN: getPositive([1, -4, 2]) return qiladi "12".
+-4 positive emas negative number bo'lganligi uchun
+uni ignore qilib qolganlarini birlashtirib string ko'rinishadi qaytarmoqda
+*/
+
+const getPositive = function (arr: number[]): string {
+  return arr.filter((num) => num > 0).join("");
+};
+console.log(getPositive([1, -4, 2]));
+console.log(getPositive([1, 4, -40, 5, 45, -43, -89 - 4, 2]));
+
 // G-TASK:
 // Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
 // MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
