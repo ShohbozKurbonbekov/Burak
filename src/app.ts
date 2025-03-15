@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import router from "./router";
 
 // PATHS
 const publicPath = path.join(__dirname, "public");
@@ -20,6 +21,8 @@ app.use(express.json());
 // 3 - VIEWS ↓
 app.set("views", viewsPath);
 app.set("view engine", "ejs");
+
 // 4 - ROUTERS ↓
+app.use("/", router);
 
 export default app;

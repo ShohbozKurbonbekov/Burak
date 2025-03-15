@@ -150,3 +150,38 @@ let names: string[] = ["John", "Jane", "Peter", "David", "Mary"];
 // 1️⃣ @types/express@4.17.3:
 //                  What is @types/express?
 // It provides TypeScript type definitions for Express. It's part of the DefinitelyTyped project, which maintains type declarations for many JavaScript libraries that don’t come with built-in TypeScript support. When you install @types/express, you're telling TypeScript what the types of all the Express functions, classes, and objects are — so TypeScript can give you auto-complete, type checking, and better error detection.
+
+//           🟩. ROUTERS AND CONTROLLERS.
+// 1️⃣ - express.Router() creates a modular, mini Express application — like a mini router—that you can use to handle a group of routes separately from the main app. When your app grows, putting all routes in one file becomes messy. express.Router() lets you organize routes in separate files or modules, then "plug them in" to the main app.
+// 2️⃣ - express.Router() creates a mini router. Helps modularize routes. You attach it to the main app using app.use().
+// 3️⃣ - import express, { Request, Response } from "express": { Request, Response } These are TypeScript types provided by the Express package. You use them to add type annotations to your route handler functions for better IntelliSense and type safety.
+
+/*                    🟩 MVC FRAMEWORK INTRODUCTION
+Over the last few years, websites have shifted from simple HTML pages with a bit of CSS to incredibly complex applications with thousands of developers working on them at the same time. To work with these complex web applications developers use different design patterns to lay out their projects, to make the code less complex and easier to work with. The most popular of these patterns is MVC also known as Model View Controller.
+
+✨ WHAT IS MVC? - The Model-View-Controller (MVC) framework is an architectural/design pattern that separates an application into three main logical components Model, View, and Controller. Each architectural component is built to handle specific development aspects of an application. It isolates the business logic and presentation layer from each other. It was traditionally used for desktop graphical user interfaces (GUIs). Nowadays, MVC is one of the most frequently used industry-standard web development frameworks to create scalable and extensible projects. It is also used for designing mobile apps.
+MVC was created by Trygve Reenskaug. The main goal of this design pattern was to solve the problem of users controlling a large and complex data set by splitting a large application into specific sections that all have their own purpose. 
+
+✨ FEATHERS OF MVC:
+a) It provides a clear separation of business logic, UI logic, and input logic.
+b) It offers full control over your HTML and URLs which makes it easy to design web application architecture.
+c) It is a powerful URL-mapping component using which we can build applications that have comprehensible and searchable URLs.
+d) It supports Test Driven Development (TDD).
+
+✨  -  COMPONENETS OF MVC:
+a) CONTROLLER - The controller is the component that enables the interconnection between the views and the model so it acts as an intermediary. The controller doesn’t have to worry about handling data logic, it just tells the model what to do. It processes all the business logic and incoming requests, manipulates data using the Model component, and interact with the View to render the final output.
+
+Responsibilities => Receiving user input and interpreting it =>  Updating the Model based on user actions. => Selecting and displaying the appropriate View. 
+Example: In a bookstore application, the Controller would handle actions such as searching for a book, adding a book to the cart, or checking out.
+
+b) MODEL - The Model component corresponds to all the data-related logic that the user works with. This can represent either the data that is being transferred between the View and Controller components or any other business logic-related data. It can add or retrieve data from the database. It responds to the controller’s request because the controller can’t interact with the database by itself. The model interacts with the database and gives the required data back to the controller.
+
+Responsibilities  => Managing data: CRUD (Create, Read, Update, Delete) operations. => Enforcing business rules. => Notifying the View and Controller of state changes.
+Example: In a bookstore application, the Model would handle data related to books, such as the book title, author, price, and stock level
+
+c) VIEW - The View component is used for all the UI logic of the application. It generates a user interface for the user. Views are created by the data which is collected by the model component but these data aren’t taken directly but through the controller. It only interacts with the controller.
+Responsibilities =>  Rendering data to the user in a specific format. =>  Displaying the user interface elements. => Displaying the user interface elements. => Updating the display when the Model changes.
+
+Example: In a bookstore application, the View would display the list of books, book details, and provide input fields for searching or filtering books.
+
+ */
