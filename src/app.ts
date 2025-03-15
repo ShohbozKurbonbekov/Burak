@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import router from "./router";
+import adminRouter from "./adminRouter";
 
 // PATHS
 const publicPath = path.join(__dirname, "public");
@@ -23,6 +24,7 @@ app.set("views", viewsPath);
 app.set("view engine", "ejs");
 
 // 4 - ROUTERS ↓
-app.use("/", router);
+app.use("/admin", adminRouter); // EJS
+app.use("/", router); // REACT.JS
 
 export default app;
