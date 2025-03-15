@@ -1,4 +1,4 @@
-import MemberService from "../models/member.service.js";
+import MemberService from "../models/Member.service";
 import { Request, Response } from "express";
 import { T } from "../libs/types/common";
 
